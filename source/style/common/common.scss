@@ -1,0 +1,170 @@
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+  
+html{
+	height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+ul{
+	list-style: none;
+}
+ul, li, p, h1, h2, h3{
+	padding: 0;
+	margin: 0;
+}
+img{
+	max-width: 100%;
+	height:auto;
+}
+header *, 
+main *,
+footer *{
+	box-sizing: border-box;
+}
+
+.content-conteiner {
+	min-height: 100%;
+  	margin-bottom: -141px; // Равно высоте футера
+	&:after {
+  		content: '';
+  		display: block;
+  		height: 141px; // Равно высоте футера
+	}
+}
+//MENU FIXED
+.menu-fixed{
+	position:fixed !important;
+	right: 12%;
+}
+// FORM VALIDATION
+.message-validation{
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #efa0a0;
+	color: #cc5555;
+	text-align: center;
+	font-size:14px;
+
+	&:empty{
+		display: none;
+	}
+}
+
+.form-input_error {
+  // border-color: #e85656;
+  // box-shadow: 0 0 25px #e85656;
+  	display: block;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #e85656;
+}
+.form-input_success {
+  border-color: #7dbf23;
+  box-shadow: 0 0 25px #7dbf23;
+}
+
+.input-login label.error{
+	position: absolute;
+    display: block;
+    margin-left: 25%;
+    margin-top: -14px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #e85656;
+}
+
+label.error{
+	position: absolute;
+    display: block;
+    margin-left: 21%;
+    margin-top: -33px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #e85656;
+}
+
+// PRELOADER
+// .preloader {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	z-index: 999999;
+// 	background: #20b5a1; 
+
+// 	&__spinner {
+// 	  width: 150px;
+// 	  height: 150px;
+// 	  position: absolute;
+// 	  top: 50%;
+// 	  left: 50%;
+// 	  transform: translate(-50%, -50%); }
+
+// 	&__animation {
+// 	  width: 150px;
+// 	  height: 150px;
+// 	  border: 3px solid transparent;
+// 	  border-radius: 50%;
+// 	  border-top-color: #fff;
+// 	  position: relative;
+// 	  animation: spin 2s linear infinite; 
+// 		  &:before,
+// 		  &:after {
+// 		    content: "";
+// 		    position: absolute;
+// 		    border: 3px solid transparent;
+// 		    border-radius: 50%;
+// 		    border-top-color: #fff; }
+// 		  &:before {
+// 		    top: 5px;
+// 		    bottom: 5px;
+// 		    left: 5px;
+// 		    right: 5px;
+// 		    animation: spin 3s linear infinite; }
+// 		 	&:after {
+// 		    top: 15px;
+// 		    bottom: 15px;
+// 		    left: 15px;
+// 		    right: 15px;
+// 		    animation: spin 1.5s linear infinite; }
+// 	}
+
+// 	&__percents {
+// 	  position: absolute;
+// 	  top: 50%;
+// 	  left: 50%;
+// 	  transform: translate(-50%, -50%);
+// 	  color: #fff; }
+// }
+
+// @-webkit-keyframes spin {
+//   0% {
+//     transform: rotate(0deg); }
+//   100% {
+//     transform: rotate(360deg); } }
+
+// @keyframes spin {
+//   0% {
+//     transform: rotate(0deg); }
+//   100% {
+//     transform: rotate(360deg); } }
+
+
+
+
